@@ -1,0 +1,17 @@
+language: java
+sudo: false
+deploy:
+  provider: releases
+  file: build/libs/xlr-orson-plugin-1.0.0-beta.jar
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+    repo: xebialabs-community/xlr-orson-plugin
+  api_key:
+    secure:
+      secure: Kyjbws8FWcjWZwF90WUQxE+zepCDFAu8HL26uI2IGqzBJ2IgydspIHgyAfcOIZH1kl8BQBWadcfWDyg4fhhP1l8raL5C5ugapITYBg8esF6p8GAT+oh2Q2D5iePvab8XMoPizLBKzOPlGqS+ecjB/AHATg+fxhGm3CWIgoMv6y4JAcSMLS/g9Kx4HrJv839BDMXBF2q69fcsCqMz/ZVmDtoNZL+fYVaUvwe1JNsLLJ6MZ+c0NAZYr8qewGKdbA5voIsxwZpJj5WRKhJgLo/0LrHwDx3B21gCUvyCqlJBCBa5EKo58VYoICX+0nb7J9CrFuwIZOEGNdNxq1qI9cDgqIFIDYXWcCLv4aY30MLfgwsbyAviKMwBc6TJsoOKCfNzefhR3LZ4M1hVZoIMcBOlXp8HYd12aDxB2MiPPmQ5n9TbLYWAhbfkWeOU3DdhSd5KlsGweZM4nt0SqoR0rYZpoKd7lKY1RpuCJ8Yls/gtCJ83aEvQb/PO8Li8Y+RvhoHD5URstomqgdPulIaJzmUAFdXzFEUNn59FyNoLQ8J8qJLeX28CPVBiTyCezvcDdeKfVxYvoKQ9MenmUghC3mIPFMO6buajQP6guFfBxb9zAiFP7XaWp2ddI3lzHITM23dHomWhe+tJn5ub49bVqbe4E6Wmv9i78tysh8wx8yxEjWs=
+notifications:
+  hipchat:
+    rooms:
+      secure: 4MBog+gCUuCGDuEiK0/EMSdy2rj8Dep/WPj/EBTHDqF/uHHF98zF/83HCX5bSNoTXql7ACSq1EthLITZAofia2J0eGqr+NzQ2uAIOKqchB3C+2fVBSvrVSEdfunt929by6QQTEwE/I3GWz292E5WRyAIsD6I19zG8Af8XCrQkMwbNFnq+0EWGe3yxv3nlOBdlknQf4xrZHrhUmuxUMTgijcFd8NaSCXUExyS7s93P/Kzxj+x7vYY02XklqrhuRwySOKdpSOa4xJt/WRYeLDQvyl4F+/jcTLTUS1qh9hV0wThZZFEi2wFb8kM6Xvz3w8UdOqEHCoRjUotNV2qEv+pbwnQxCIlJ7wJVRw+Iaw6s0Dg54GoDeySPBBUje8uF7sfEDRreuAo1G97qwAPKov+7Cn7Uh1qD3/B2jC8l2HRse+cSRJOxd4aSuOvhZz+VExaidvH2nDEOYiM5VOIWslvwjHmViiYNaKIkBD0leJqPup8tFpJIkeeHWlRAyNhZWX3z+nG5yEhnn1Y3thUHL0KxkGdJs3mGLifJiSgHP3G99fyFnYyG/Hhy8SBj8yE8cqRaa7oX0HzZapWetcGymF7nB8Wj8mDrUpqYEF+Q/Shh0YumZA05xp7K1kvusRUcD3aV24MfwF2dzu4RLkpfmrGk9CoKXNQZ6NtovyTUih9y8Y=
