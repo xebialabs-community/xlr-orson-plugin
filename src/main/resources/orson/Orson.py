@@ -24,7 +24,6 @@ class OrsonClient(object):
         if (method == 'GET'):
             r = requests.get(
                 url=url,
-                verify=False,
                 json=request_body,
                 headers=self.headers,
                 params=request_params,
@@ -32,14 +31,12 @@ class OrsonClient(object):
         elif (method == 'POST'):
             r = requests.post(
                 url=url,
-                verify=False,
                 json=request_body,
             )
         return r.json()
 
     def orson_getdatadictionary(self, variables):
-        data_dictionary = {}
-        data_dictionary_datablock = self.rest_request("datablocks", "GET", None,  {"uniqueName":"data_dictionary_1.0"})
+        data_dictionary = self.rest_request("datablocks", "GET", None, {"uniqueName":"data_dictionary_1.0"})
         return {'output' : data_dictionary}
 
     def orson_getscenarios(self, variables):
