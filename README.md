@@ -19,7 +19,25 @@ This module offers a basic interface to Orson Test Data functionality.
 ## Installation
 Copy the plugin JAR file into the `SERVER_HOME/plugins` directory of XL Release.
 
-## Authentication CI
+## Orson Server CI
+Defines the Orson server you will connect to.
+
+![OrsonSharedConfiguration](images/orson-shared-configuration.png)
+
+## Get Data Dictionary
+Retrieves data dictionary from Orson.
+
+![OrsonGetDataDictionary](images/orson-get-data-dictionary.png)
+
+## Get Scenarios
+Retrieves all scenarios from Orson.
+
+![OrsonGetScenarios](images/orson-get-scenarios.png)
+
+## Get Scenario
+Retrieve a specific scenarios from Orson given the scenario name.
+
+![OrsonGetScenario](images/orson-get-scenario.png)
 
 ---
 
